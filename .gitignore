@@ -1,0 +1,155 @@
+# =============================================================
+# Immunocalypse - .gitignore
+# Purpose: Track ONLY custom C# scripts (Assets/_Project/**/*.cs)
+#          Everything else is managed by Unity Version Control (Plastic SCM)
+# =============================================================
+
+# ----- Ignore EVERYTHING by default -----
+/*
+!.gitignore
+/Assets/*
+
+# ----- UN-ignore only our custom C# scripts -----
+# Allow the _Project feature folder tree through
+!Assets/
+!Assets/_Project/
+!Assets/_Project/**/
+!Assets/_Project/**/*.cs
+
+# ----- Unity Generated & Temp Folders -----
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+.plastic/
+
+# ----- Unity Cache & Meta files -----
+*.meta
+*.pidb
+*.booproj
+*.svd
+*.userprefs
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.unityproj
+*.DS_Store
+
+# ----- Asset types to always ignore -----
+# Scenes
+*.unity
+
+# Prefabs
+*.prefab
+
+# ScriptableObjects / Assets
+*.asset
+*.mat
+*.anim
+*.controller
+*.overrideController
+*.physicMaterial
+*.physicsMaterial2D
+*.playable
+*.mask
+*.brush
+*.flare
+*.guiskin
+*.fontsettings
+*.renderTexture
+*.spriteatlas
+*.terrainlayer
+*.mixer
+*.shadergraph
+*.shadersubgraph
+*.lighting
+
+# Text & Documentation
+*.txt
+*.log
+*.pdf
+*.doc
+*.docx
+
+
+# Shaders
+*.shader
+*.hlsl
+*.glsl
+*.cginc
+
+# Textures & Images
+*.png
+*.jpg
+*.jpeg
+*.tga
+*.tiff
+*.tif
+*.psd
+*.bmp
+*.gif
+*.exr
+*.hdr
+*.webp
+*.ico
+*.svg
+
+# 3D Models
+*.fbx
+*.FBX
+*.obj
+*.OBJ
+*.dae
+*.3ds
+*.blend
+*.max
+
+# Audio
+*.mp3
+*.wav
+*.ogg
+*.aiff
+*.aif
+*.flac
+*.m4a
+
+# Video
+*.mp4
+*.mov
+*.avi
+*.webm
+
+# Fonts
+*.ttf
+*.otf
+*.fnt
+
+# Packages & Archives
+*.unitypackage
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Third-party & vendor asset folders (managed by Plastic SCM)
+Assets/ThirdParty/
+
+# ----- IDE & OS Files -----
+.vs/
+.vscode/
+.idea/
+*.user
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
+
+# ----- Rider / Visual Studio -----
+*.DotSettings.user
+.editorconfig
+
